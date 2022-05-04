@@ -25,7 +25,7 @@ def receive():
 
 def write():
     while True:
-        answer = input("You answer:  ")
+        answer = input()
         client.send(answer.encode('utf-8'))
 
 receive_thread = Thread(target=receive)
